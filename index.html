@@ -25,9 +25,16 @@
             grecaptcha.render('example3', {
                 'sitekey': '6LfJtCsmAAAAAOkn33ruFrhbjhiWd1FHvsBgfr7O',
                 'callback': verifyCallback,
-
             });
         }
+        window.parent.postMessage(JSON.stringify({
+                event_code: 'ym-client-event', data: {
+                    event: {
+                        code: "recaptcha",
+                        data: onloadCallback
+                    }
+                }
+            }), '*');
     </script>
     </head>
     <body>
