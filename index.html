@@ -2,61 +2,11 @@
 <html>
     <head>
         <title>...</title>
-<!--         <script
-            src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-            async defer>
-    </script> -->
-
-<script src="https://www.google.com/recaptcha/api.js?render=6LfZ-x8mAAAAAMTOKGK8tNdZmf4ElozDfqA0Fw11" type="text/javascript">
-//         grecaptcha.ready(function() {
-// .then(function(token) {
-              window.parent.postMessage(JSON.stringify({
-                event_code: 'ym-client-event', data: {
-                    event: {
-                        code: "recaptcha",
-                        fate: grecaptcha.execute('6LfZ-x8mAAAAAMTOKGK8tNdZmf4ElozDfqA0Fw11')
-                    }
-                }
-            }), '*');
-//           });
-
-      
-
-//         var verifyCallback = function (response) {
-
-//             window.parent.postMessage(JSON.stringify({
-//                 event_code: 'ym-client-event', data: {
-//                     event: {
-//                         code: "recaptcha",
-//                         data: response
-//                     }
-//                 }
-//             }), '*');
-//             return true
-//         };
-//         var onloadCallback = function () {
-//             grecaptcha.render('example3', {
-//                 'sitekey': '6LfJtCsmAAAAAOkn33ruFrhbjhiWd1FHvsBgfr7O',
-//                 'callback': verifyCallback,
-//             });
-//         }
-//         window.parent.postMessage(JSON.stringify({
-//                 event_code: 'ym-client-event', data: {
-//                     event: {
-//                         code: "recaptcha",
-//                         data: onloadCallback
-//                     }
-//                 }
-//             }), '*');
-    </script>
-    </head>
-    <body>
-        <p>....</p>
-        <!-- 
-<script src="https://www.google.com/recaptcha/api.js?render=6LfZ-x8mAAAAAMTOKGK8tNdZmf4ElozDfqA0Fw11">
-        grecaptcha.ready(function() {
-          grecaptcha.execute('6LfZ-x8mAAAAAMTOKGK8tNdZmf4ElozDfqA0Fw11', {action: 'submit'}).then(function(token) {
-              window.parent.postMessage(JSON.stringify({
+        <script type="text/javascript">
+setTimeout(function(){
+grecaptcha.ready(function () {
+grecaptcha.execute ('6LfJtCsmAAAAAOkn33ruFrhbjhiWd1FHvsBgfr7O', {action: 'submit'}) .then (function (token) {
+    window.parent.postMessage(JSON.stringify({
                 event_code: 'ym-client-event', data: {
                     event: {
                         code: "recaptcha",
@@ -64,9 +14,13 @@
                     }
                 }
             }), '*');
-          });
-        });
-      
-  </script> -->
+enableBtn() ;
+});
+});
+}, 9000)|;
+</script>
+    </head>
+    <body>
+        <p>....</p>
     </body>
 </html>
