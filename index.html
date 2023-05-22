@@ -4,6 +4,7 @@
     function onload() {
       grecaptcha.ready(function() {
           grecaptcha.execute('6LfJtCsmAAAAAOkn33ruFrhbjhiWd1FHvsBgfr7O', {action: 'submit'}).then(function(token) {
+            console.log(token)
               window.parent.postMessage(JSON.stringify({
                 event_code: 'ym-client-event', data: {
                     event: {
