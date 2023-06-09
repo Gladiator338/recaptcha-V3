@@ -1,30 +1,1003 @@
-<html>
-  <head>
-<script src="https://www.google.com/recaptcha/api.js?render=6LfJtCsmAAAAAOkn33ruFrhbjhiWd1FHvsBgfr7O"></script>
-  <script>
-    function onload() {
-      grecaptcha.ready(function() {
-          grecaptcha.execute('6LfJtCsmAAAAAOkn33ruFrhbjhiWd1FHvsBgfr7O', {action: 'submit'}).then(function(token) {
-            console.log(token,"++token++")
-              window.parent.postMessage(JSON.stringify({
-                event_code: 'ym-client-event', data: {
-                    event: {
-                        code: "recaptcha",
-                        data: {
-                            recaptcha: token
-                        }
-                    }
+<!DOCTYPE html>
+<html lang="en">
+   <head>  
+   
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Stockholding, promoted by leading Financial Institutions offers Demat Trading, Custodial, e-Stamping, e-Court Fee, e-Registration Fee and more.">
+    <meta name="keywords" content="investment planning, financial advisory services, wealth management service, financial planning services">
+    <meta property="og:site_name" content="StockHolding Corporation of India Limited"/>
+    <meta property="og:title" content="Stockholding | Get the best location to for your share holding"/>
+    <meta property="og:url" content="https://www.stockholding.com/"/>
+    <meta property="og:image" content="https://www.stockholding.com/images/StockHoldingLogo-1200x630.jpg">
+    <meta property="og:type" content="Website" />
+    <meta property="og:description" content="StockHolding provides simplified financial planning and wealth management solutions to tap the best opportunities and ensure growth."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@StockHoldingIN"/>
+    <meta name="twitter:image" content="https://www.stockholding.com/images/StockHoldingLogo-1200x630.jpg"/>
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src maps.gstatic.com maps.googleapis.com  www.googletagmanager.com use.fontawesome.com www.google-analytics.com www.youtube.com service.maxymiser.net tags.bkrtx.com app.yellowmessenger.com cdn.yellowmessenger.com img06.en25.com connect.facebook.net googleads.g.doubleclick.net 'self' 'unsafe-inline'; style-src fonts.googleapis.com use.fontawesome.com 'self' 'unsafe-inline'; font-src use.fontawesome.com fonts.gstatic.com fonts.googleapis.com cdn.yellowmessenger.com data: 'self'  'unsafe-inline'; img-src www.google.com www.facebook.com www.google-analytics.com maps.gstatic.com maps.googleapis.com secure.gravatar.com cdn.yellowmessenger.com data: 'self' ; connect-src  stats.g.doubleclick.net app.yellowmessenger.com www.youtube.com maps.googleapis.com www.google-analytics.com  'self'; frame-src stags.bluekai.com www.youtube.com www.facebook.com 'self'; media-src cdn.yellowmessenger.com 'self';" />-->
+    <title>StockHolding |Financial & e-Governance Solution Provider</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width,user-scalable=no" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="css/all.min.css">
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->		
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<script type='text/javascript' src='//service.maxymiser.net/api/eu/stockholding.com/d3571f/mmapi.js'> </script>
+    <!--<script src="https://www.google.com/recaptcha/api.js?render=6LfJtCsmAAAAAOkn33ruFrhbjhiWd1FHvsBgfr7O"></script>-->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfqdPAiAAAAAMNENHAInxp-9brEIqcaepfvDCOH"></script>
+<script type='text/javascript' src='//service.maxymiser.net/api/eu/stockholding.com/d3571f/mmapi.js'> </script>
+<!-- Begin BlueKai Tag -->
+<iframe name="__bkframe" height="0" width="0" frameborder="0" style="display:none;position:absolute;clip:rect(0px 0px 0px 0px)" src="about:blank"></iframe>
+<script type="text/javascript" src=https://tags.bkrtx.com/js/bk-coretag.js></script>
+<script type="text/javascript">
+bk_doJSTag(90351, 1);
+</script>
+<!-- End BlueKai Tag -->
+<script type="text/javascript">
+    var _elqQ = _elqQ || [];
+    _elqQ.push(['elqSetSiteId', '1259754']);
+    _elqQ.push(['elqTrackPageView', window.location.href]);
+    (function () {
+        function async_load() {
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+            s.src = '//img06.en25.com/i/elqCfg.min.js';
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        }
+        if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+        else if (window.attachEvent) window.attachEvent('onload', async_load);
+    })();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TM92BW5');
+</script>
+<!-- End Google Tag Manager -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<link rel="canonical" href="https://www.stockholding.com/" />
+	<Style>
+.akam-logo {
+    height: 70px;
+    margin-top: 6px;
+}
+.navbar .nav-container .menu-items .c-menu, .navbar .nav-container .menu-items .sc-menu {
+    padding: 8px 18px;
+  
+}
+.tpnav{height:80px;}
+	 .marque-container marquee span::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 3px;
+    height: 25px;
+    margin: 3px 0 0 30px;
+    background-color: #fff;
+}
+.marque-container marquee span:last-child:after {
+    background-color: transparent;
+}
+.marque-container marquee span {
+    display: inline-block;
+    padding:5.5px 30px;
+    font-weight: 500;
+    font-size: 18px;
+}   
+	    
+marquee{color:#fff;background-color:#0064b2;font-size:18px;padding:5px 0;width:100%;margin:auto;display:block;margin-bottom:13px}
+marquee a,marquee a:hover,marquee a:focus{color:#fff}	 
+
+.grecaptcha-badge {
+  width: 70px !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+  left: 4px !important;
+  bottom: 130px !important;
+}
+
+.grecaptcha-badge:hover {
+  width: 256px !important;
+}
+
+@media (max-width: 1366px){
+marquee {margin: 5px 0 10px 0;}
+}
+
+@media (max-width: 1024px){
+
+.akam-logo {
+    height: 60px;
+    margin-top: 20px;
+}
+}
+	</style>
+   </head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TM92BW5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+      <script src="js/header-test.js"></script> 
+      <div class="bg">
+         <div class="wrapper index-wrapper">
+            <!--wrapper open -->
+            <div class="container-fluid index-container clearfix p-0">
+               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <a href="https://www.stockholding.com/estamp-index.html?utm_source=BANNER&utm_medium=Website&utm_campaign=APestampLaunch" target="_blank">                         
+                            <picture>
+                               <source media="(max-width: 1023px)" srcset="images/eSTAMPING-AP-MOBILE-APR-23.jpg">
+                               <img src="images/e-STAMPING-AP-APR-23.jpg" alt="e stamping">
+                            </picture>
+                        </a>
+                     </div>
+                     <div class="carousel-item">
+                        <picture>
+                           <source media="(max-width: 1023px)" srcset="images/CYBER-CRIME-713X927-JAN23.jpg">
+                           <img src="images/CYBER-CRIME-1382X559-JAN23.jpg" alt="CYBER CRIME">
+                        </picture>
+                     </div>
+					<div class="carousel-item">
+                        <picture>
+                           <source media="(max-width: 1023px)" srcset="images/BRANDING-713X925-MOB-BNNRS-JAN-23.jpg">
+                           <img src="images/BRANDING-HOME-PG-1382X559-JAN-23.jpg" alt="online-payment-banner">
+                        </picture>
+                     </div>
+				
+					 <div class="carousel-item">
+				        <a href="https://onboard.stockholding.com/DematCustRegistration/CustDematRegistration?utm_source=website&utm_medium=banners&utm_campaign=newdemathyp&_ga=2.218653401.1343731405.1684131037-2124276651.1682312872">
+                        <picture>
+                           <source media="(max-width: 1023px)" srcset="images/demat-trading-home-mob-banner.jpg">
+                           <img src="images/demat-trading-home-desk-banner.jpg" alt="online-payment-banner">
+                        </picture>
+                        </a>                        
+                     </div>
+					 <div class="carousel-item">
+                        <a href="https://online.stockholding.com/billpymt/shcilBillStep.aspx?_ga=2.15756022.1343731405.1684131037-2124276651.1682312872">                        
+                        <picture>
+                           <source media="(max-width: 1023px)" srcset="images/ONLINE-PAYMENT-MOB-BNNRS_AUG-22-01.jpg">
+                           <img src="images/ONLINE-PAYMENT-HOMEPG-BNNR_AUG-22-01.jpg" alt="online-payment-banner">
+                        </picture>
+                        </a>                        
+                     </div>
+					 <div class="carousel-item">
+                        <a href="https://online.stockholding.com/secure_login/ssl_login.aspx?_ga=2.13124983.1343731405.1684131037-2124276651.1682312872" target="_blank">					     
+                        <picture>
+                           <source media="(max-width: 1023px)" srcset="images/fastforward-banner-mobile.jpg">
+                           <img src="images/fastforward-banner-desktop.jpg" alt="online-payment-banner">
+                        </picture>
+                        </a>
+                     </div>
+					 <div class="carousel-item">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#banner-popup">					     
+                        <picture>
+                                <source media="(max-width: 1023px)" srcset="images/Custodial_713X927_Homepage_Mobile.jpg">
+                                <img src="images/Custodial_1382X559_Homepage_Desktop_R2.jpg" alt="online-payment-banner">
+                        </picture>
+                        </a>
+                     </div>
+	
+                     
+                  </div>
+                  <!-- carousel indicator -->
+                  <div class="carousel-indicators">
+                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>                   
+                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 2"></button>                   
+                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 2"></button>                   
+                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 2"></button>                   
+                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 2"></button>                   
+                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 2"></button>                   
+                                      
+                  </div>
+               </div>
+            </div>
+        	<div class="marque-container">
+        <marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+          
+          <!--<span>Last month to save tax. Hurry! Invest in NPS & ELSS now.</span>-->
+          <span>PAN Seeding with Aadhaar and Nominee Updation is Mandatory by 30<sup>th</sup> June, 2023 in your Demat & Trading Account to avoid liable “Suspension”.</span>
+          <span>Lock-in high returns and safety by investing in 7.35% FRSB 2020 (Taxable).</span>
+           <span>Invest in National Pension System to financially secure your life post retirement.</span>
+        </marquee>
+      </div>
+            <div class="inner-wapper index-inner-wrapper">               
+               <script src="js/personal-investment.js"></script>
+               <!-- Tab closing -->
+               <section class="unparalleled-section">
+                  <div class="unparalleled-div">
+                     <div class="heading">
+                        <h3 class="sub-heading">Unparalleled <span class="experience">experience</span> and <span class="expertise">expertise</span></h3>
+                     </div>
+                     <div class="unparalleled-container">
+                        <div class="unparalleled-grid-div">
+                           <div class="unparallel-grid-item">
+                              <div class="unparallel-icon"><img src="images/unpralled-icon1-t.png" alt="1986 Decades of Trust"></div>
+                              <div class="unp-txt">
+                                 <span class="count" data-speed="5000" data-refresh-interval="50">1986</span><br>
+                                 <p class="assn">Decades of Trust</p>
+                              </div>
+                           </div>
+                           <div class="unparallel-grid-item">
+                              <div class="unparallel-icon"><img src="images/unpralled-icon2.png" alt="5cr Customers"></div>
+                              <div class="unp-txt">
+                                 <span class="count" data-speed="5000" data-refresh-interval="50">5</span> <span class="bld-txt">Cr+</span><br>
+                                 <p class="assn">CUSTOMERS</p>
+                              </div>
+                           </div>
+                           <div class="unparallel-grid-item">
+                              <div class="unparallel-icon"><img src="images/unpralled-icon3.png" alt="141 Cities"></div>
+                              <div class="unp-txt">
+                                 <span class="count" data-speed="5000" data-refresh-interval="50">141</span><br>
+                                 <p class="assn">cities</p>
+                              </div>
+                           </div>
+                           <div class="unparallel-grid-item">
+                              <div class="unparallel-icon"><img src="images/unpralled-icon4.png" alt="200 Branches"></div>
+                              <div class="unp-txt">
+                                 <span class="count" data-speed="5000" data-refresh-interval="50">200</span> <span class="bld-txt">+</span><br>
+                                 <p class="assn">Branches</p>
+                              </div>
+                           </div>
+                           <div class="unparallel-grid-item asset-under">
+                              <div class="unparallel-icon"><img src="images/unpralled-icon5.png" alt=""></div>
+                              <div class="unp-txt">
+                                 <span class="count" data-speed="5000" data-refresh-interval="100">38</span> Lakh Cr<sup>*</sup><br>
+                                 <p class="assn">ASSETS UNDER CUSTODY</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <div class="clearfix"></div>
+               <section>
+                  <div class="video-div">
+                     <h3 class="sub-heading"><span>Invest-Easy</span> - video series</h3>
+                     <div class="vid-main-wrapper">
+                        <!-- THE YOUTUBE PLAYER -->
+                        <div class="vid-container">
+                           <iframe id="vid_frame" src="https://www.youtube.com/embed/YCtr5zrG3S0?rel=0&amp;showinfo=0&amp;autohide=1" frameborder="0" width="560" height="315"></iframe>
+                        </div>
+                        <!-- THE PLAYLIST -->
+                        <div class="vid-list-container">
+                           <ol id="vid-list">
+                               
+                             <li>
+                                <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/YCtr5zrG3S0?autoplay=0&rel=0&showinfo=0&autohide=1'" id="elss-watch-button">
+                                    <span class="vid-thumb">
+                                        <img class="video-thumbnail" src="images/stockholding-success-story.jpg" alt="StockHolding Customer reviews" />
+                                        <img class="play-btn-icon" src="images/play-vid-big.png">
+                                    </span>
+                                    <div class="desc"><strong>StockHolding -</strong> Corporate Video 2023 "A success story"</div>
+                                </a>
+                            </li>
+                            
+                             <li>
+                                <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/1D3slYGh-mU?autoplay=0&rel=0&showinfo=0&autohide=1'" id="elss-watch-button">
+                                    <span class="vid-thumb">
+                                        <img class="video-thumbnail" src="images/stockholding-estamping.jpg" alt="StockHolding Customer reviews" />
+                                        <img class="play-btn-icon" src="images/play-vid-big.png">
+                                    </span>
+                                    <div class="desc"><strong>StockHolding -</strong> All you need to know about e-Stamping</div>
+                                </a>
+                              </li>
+                               
+                               
+                              	 <li>
+                                    <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/fPzeU3RyvpA?autoplay=0&rel=0&showinfo=0&autohide=1'" id="elss-watch-button">
+                                      <span class="vid-thumb">
+                                          <img class="video-thumbnail" src="images/YOGESH-YOUTUBE-MARCH-23.jpg"  alt="yogesh singh" />
+                                          <img class="play-btn-icon" src="images/play-vid-big.png">
+                                      </span>
+                                      <div class="desc"><strong>StockHolding -</strong>Floating Rate Savings Bonds, 2020 (Taxable) offer one of the best returns over the long-term.<br></div>
+                                    </a>
+                                 </li> 
+                               
+                              <li>
+                                <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/4GquFf6OVaM?autoplay=0&rel=0&showinfo=0&autohide=1'" id="elss-watch-button">
+                                  <span class="vid-thumb">
+                                      <img class="video-thumbnail" src="images/empowering-todays-women.jpg"  alt="empowering todays women" />
+                                      <img class="play-btn-icon" src="images/play-vid-big.png">
+                                  </span>
+                                  <div class="desc"><strong>StockHolding -</strong>Empowering today's women to be financially independent tomorrow<br></div>
+                                </a>
+                              </li>
+                                   
+                               
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/o7_KcZfeZxk?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/nuskas-women.jpg">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png">
+                                    </span>
+                                    <div class="desc"><strong>StockHolding - </strong>Investments Nuskas for wonder women</div>
+                                 </a>
+                              </li>
+                              
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/FlKnmiKE-ec?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/women-video-new.jpg">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png">
+                                    </span>
+                                    <div class="desc"><strong>StockHolding - </strong> Demystifying Investments for women </div>
+                                 </a>
+                              </li>
+                              
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/gye7oIm-tvc?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/video-thmb-celebrate.jpg">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png">
+                                    </span>						  
+                                    <div class="desc"><strong>StockHolding - </strong> Answers to all your financial planning needs</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/MRMoGNcQL6k?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/video-dassi.jpg">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png">
+                                    </span>
+                                    <div class="desc"><strong>StockHolding - </strong>  Importance of financial planning by Mr Dassi (VP-Retail Head)</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/V8Z1uox2lZU?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/sanjay-p.jpg">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png"></span>
+                                    <div class="desc"><strong>Financial Planning - </strong>  Finding the right broker made easy, by Mr Sanjay Pote</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/hVm2UaF3854?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/vid-player-thmb-nps.jpg">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png"></span>
+                                    <div class="desc"><strong>National Pension System - </strong> Retirement Planning Made Easy with National Pension System</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/crVgtRFsxVU?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/vid-player-thmb1.png">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png"></span>
+                                    <div class="desc"><strong>e-Stamping - </strong> A simpler way to pay stamp duty</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/9bXMybWhqeE?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/vid-player-thmb7.png">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png"></span>
+                                    <div class="desc"><strong> Demat &amp; Broking - </strong> Open a Demat-Broking Account with Ease</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/2nRWtFjfAGw?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/vid-player-thmb4.png">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png"></span>
+                                    <div class="desc"><strong>Insurance - </strong>  Enjoy Life Worry Free</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/lam6suSgO5A?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/vid-player-thmb5.png">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png"></span>
+                                    <div class="desc"><strong>e-MF - </strong>Manage multiple mutual<br> fund portfolios in one place</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/CD4-EnAibG0?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/vid-player-thmb6.png">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png"></span>
+                                    <div class="desc"><strong>ELSS - </strong> Tax Bachao, Saving Badhao</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/1PKVfodx3s4?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/nps_ease_thumb.jpg">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png"></span>
+                                    <div class="desc"><strong>National Pension System - </strong> Banaiye apna Retirement planning aasaan National Pension System ke zariye </div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/LUiUUe_vQ5g?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/insurance_solution_thumb.jpg">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png"></span>
+                                    <div class="desc"><strong>Insurance - </strong>  Rahiye surakshit StockHolding Insurance solutions ke zariye</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/885RirFs4GI?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/demat_ease_thumb.jpg">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png"></span>
+                                    <div class="desc"><strong>Demat & Broking - </strong> Demat Account kholna hua aasaan</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/yuwISJIfZlU?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/eless_ease_thumb.jpg">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png"></span>
+                                    <div class="desc"><strong>ELSS - </strong>  Tax Bacchat aur Behtar Returns</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/SkduHYG7nRQ?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/emf_ease_thumb.jpg">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png"></span>
+                                    <div class="desc"><strong>e-MF - </strong> banaye Mutual Funds investment aasaan</div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="javascript:void();" onclick="document.getElementById('vid_frame').src='https://youtube.com/embed/0zoJ23V3hgU?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+                                    <span class="vid-thumb">
+                                    <img class="video-thumbnail" src="images/estamping_ease_thumb.jpg">
+                                    <img class="play-btn-icon" src="images/play-vid-big.png"></span>
+                                    <div class="desc"><strong>e-Stamping - </strong> Stamp duty ke bhugtaan ka aasaan tareeka</div>
+                                 </a>
+                              </li>
+                           </ol>
+                        </div>
+                     </div>                     
+                  </div>
+               </section>
+               <div class="clearfix"></div>
+               <section>
+                  <div class="customer-div">
+                     <h3 class="sub-heading"><span>Our customers</span> say it best</h3>
+                     <div class="owl-slider">
+                        <div id="carousel" class="owl-carousel">
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new13.jpg" alt="testimonials Pulkit Singhal - Allahabad" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i> Pulkit Singhal - Allahabad
+                                    </p>
+                                    <p class="overview"> 
+                                       I am happy to be a customer of StockHolding because SHCIL is always there to help us through all our trading and demat needs and have always been reliable.Two things that I like about StockHolding services are Always present for us and Completely trustworthy and reliable
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new14.jpg" alt=" विजय शंकर पाण्डेय - इलाहाबाद" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i>  विजय शंकर पाण्डेय - इलाहाबाद
+                                    </p>
+                                    <p class="overview"> 
+										स्टाक होल्डिंग द्वारा मुझे एवं मेरे परिवार को उत्तम , त्वरित एवं गुणवत्ता परक सेवाएं प्रदान की जाती है, वित्तीय मामलों में वांछित आवश्यकतानुसार प्रकरणों का समुचित समाधान अविलम्ब किया जाता है लाभार्थियों के प्रति श्री सत्यनारायण जी का कार्य व सहयोग अत्यन्त सराहनीय व प्रशंसनीय है.
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new2.jpg" alt="Anoop Jain - Bhopal" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i> Anoop Jain - Bhopal
+                                    </p>
+                                    <p class="overview"> 
+                                       I have been a customer of StockHolding for 12 years now and I have been receiving very good service from the staff. They are prompt in updating me about new product offerings. They are very customer-friendly and trustworthy.
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new4.jpg" alt="Atul Bansal - Kolkata" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i>  Atul Bansal - Kolkata
+                                    </p>
+                                    <p class="overview"> 
+                                       This organization taught me the value of good investments and the need to choose protects that protect my loved ones and me. Their service is very good and staff are competent.
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new1.jpg" alt="Amitava Moitra - Kolkata" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i>  Amitava Moitra - Kolkata
+                                    </p>
+                                    <p class="overview"> 
+                                       StockHolding offers complete financial solution to its stakeholders and backs them with trus
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new3.jpg" alt="Ashok Keshavdas Gangwani - Vadodara" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i> Ashok Keshavdas Gangwani - Vadodara
+                                    </p>
+                                    <p class="overview"> 
+                                       StockHolding offers complete financial solution to its stakeholders and backs them with trus
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new5.jpg" alt="Jignashu Manish Parmar - Vadodara" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i> Jignashu Manish Parmar - Vadodara
+                                    </p>
+                                    <p class="overview"> 
+                                       I find the daily updates from StockHolding very useful. The staff is very efficient In fact I got a very robust platform to invest in all kinds of financial products.
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new6.jpg" alt="Kalpesh C. Patel - Ahmedabad" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i> Kalpesh C. Patel - Ahmedabad
+                                    </p>
+                                    <p class="overview"> 
+                                       This organization taught me the value of good investments and the need to choose protects that protect my loved ones and me. Their service is very good and staff are competent.
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new7.jpg" alt="Manoj Kumar Bisht - Bhopal" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i> Manoj Kumar Bisht - Bhopal
+                                    </p>
+                                    <p class="overview"> 
+                                       I love working for StockHolding as it exposes me to the highly dynamic world of finance and I can keep myself abreast of the latest in this space. I am also aware that working here enables me to help the society in wealth creation and delighted to be exposed to training sessions. The rewards and recognition programme offered by the company is truly inspiring.
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new8.jpg" alt="Nandkumar Tukaram Patil - Mumbai" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i> Nandkumar Tukaram Patil - Mumbai									   
+                                    </p>
+                                    <p class="overview"> 
+                                       I have been a customer of StockHolding for years and I am very happy with their services. The staff has always helped me stay in total control of my investments
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new9.jpg" alt="Ketan Dattani - Ahmedabad" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i> Ketan Dattani - Ahmedabad
+                                    </p>
+                                    <p class="overview"> 
+                                       I have been a customer of StockHolding for 11 years. I feel the services offered have improved substantially. The staff offers a personal touch and are very prompt and efficient.
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new10.jpg" alt="Nishant R. Pathak - Vadodara" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i> Nishant R. Pathak - Vadodara
+                                    </p>
+                                    <p class="overview"> 
+                                       I have been a customer of StockHolding for years and I am very happy with their services. The staff has always helped me stay in total control of my investments
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new11.jpg" alt="Pankaj Surendra Bhatt - Ahmedabad" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i> Pankaj Surendra Bhatt - Ahmedabad
+                                    </p>
+                                    <p class="overview"> 
+                                       I am very content with the services offered and this has helped me plan my finances better. The branch staff are well appointed and very pleasing.
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb-new12.jpg" alt="Rajkumar Ladha - Ahmedabad" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i> Rajkumar Ladha - Ahmedabad
+                                    </p>
+                                    <p class="overview"> 
+                                       StockHolding offers complete financial solution to its stakeholders and backs them with trust. The staff at StockHolding are very competent and solve all my queries. This helps me get a proper direction on the investments that I need to make in order to secure my future.
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="testm-wrap">
+                                 <div class="content">
+                                    <img src="images/testiominoal-thmb1.jpg" alt="Deepak Bhide - Mumbai" class="img-fluid"> 
+                                    <p class="testimonial-title">
+                                       <i class="fas fa-quote-left left-quote"></i> Deepak Bhide - Mumbai
+                                    </p>
+                                    <p class="overview"> 
+                                       Complete solution to all your investment related needs, provided by experts under one roof. StockHolding helped me realise my financial dreams effectively
+                                       <i class="fas fa-quote-right right-quote"></i><br>
+                                       <span><a href="testimonial.html">Read More</a></span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>				  
+               </section>
+               <div class="clearfix"></div>
+               <section>			    
+                  <div class="important-message-grid">
+                     <div class="important-message important-message-item1">
+                        
+                        <div id="carousel-important-item-1" class="carousel slide">
+                           <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                 <div class="imp-head">Important Messages</div>
+                                 <p>'Notice regarding 34th Annual General Meeting of Stock Holding Corporation of India Limited'</p>
+                                 <p><a href="https://corporate.stockholding.com/about-us/" target="_blank" class="readmore" id="tds-declaration-cta-1" style="color:#fff">View<img src="images/wht-arrow.png" alt="View Arrow"></a></p>
+                              </div>
+                              <div class="carousel-item">
+                                 <div class="imp-head">Important Messages</div>
+                                 <p>"No need to issue cheques by investors while subscribing to IPO. Just write the bank account number and sign in the application form to authorise your bank to make payment in case of allotment. No worries for refund as the money remains in investor's account."</p>
+                                 <p><a href="pdf/communiques_dp_DP-5547-SEBI-Notification-Ticker-on-Website-of-DPs-for-Investor-Awareness.pdf" target="_blank" class="readmore" id="tds-declaration-cta-1" style="color:#fff">View<img src="images/wht-arrow.png" alt="View Arrow"></a></p>
+                              </div>
+                              <div class="carousel-item">
+                                 <div class="imp-head">Important Messages</div>
+                                 <p>TDS Declaration</p>
+                                 <p><a href="pdf/TDS-declaration-on-portal.pdf" target="_blank" class="readmore" id="tds-declaration-cta-1" style="color:#fff">View<img src="images/wht-arrow.png" alt="View Arrow"></a></p>
+                              </div>
+                              <div class="carousel-item">
+                                 <div class="imp-head">Important Messages</div>
+                                 <p>Early Redemption of Sovereign Gold Bond 2016 Tranche II (Issue date March 29, 2016)</p>
+                                 <p><a href="pdf/2021-0026-Policy-Early-Redemption-of-Sovereign-Gold-Bond-2016-Tranche -II-March-29-2016.pdf" target="_blank" class="readmore" id="imp-message-read-more-cta-10">View Circular<img src="images/wht-arrow.png" alt="View Arrow"></a></p>
+                              </div>
+                              <div class="carousel-item">
+                                 <div class="imp-head">Important Messages</div>
+                                 <p>Prevent Unauthorized Transactions in your demat account --&gt; Update your Mobile Number with your Depository Participants. Receive alerts on your Registered Mobile for all debit and other important transactions in your demat account directly from NSDL on the same day. Issued in the interest of Investors.</p>
+                              </div>
+                              <div class="carousel-item">
+                                 <div class="imp-head">Important Messages</div>
+                                 <p>KYC is one time exercise while dealing in securities markets - once KYC is done through a SEBI registered intermediary (broker, DP, Mutual Fund etc.), you need not undergo the same process again when you approach another intermediary.</p>
+                              </div>
+                              <div class="carousel-item">
+                                 <div class="imp-head">Important Messages</div>
+                                 <p><a href="https://scores.gov.in/scores/Welcome.html" target="_blank" id="score-investor-cta"><img class="media-object img-fluid" src="images/scores-investor-complaints.jpg" alt=""></a></p>
+                              </div>
+                           </div>
+                           <button class="carousel-control-prev" type="button" data-bs-target="#carousel-important-item-1" data-bs-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Previous</span>
+                           </button>
+                           <button class="carousel-control-next" type="button" data-bs-target="#carousel-important-item-1" data-bs-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Next</span>
+                           </button>
+                           <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carousel-important-item-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carousel-important-item-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carousel-important-item-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carousel-important-item-1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#carousel-important-item-1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                              <button type="button" data-bs-target="#carousel-important-item-1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                              <button type="button" data-bs-target="#carousel-important-item-1" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                           </div>
+                        </div>                        
+                        
+						<!--<div class="list-wrapper">-->
+						<!--		<div class="list-item">-->
+						<!--			  <div class="imp-head">Important Messages</div>-->
+						<!--			  <p>'Notice regarding 34th Annual General Meeting of Stock Holding Corporation of India Limited'</p>-->
+						<!--			  <p><a href="https://corporate.stockholding.com/about-us/" target="_blank" class="readmore" id="tds-declaration-cta-1" style="color:#fff">View<img src="images/wht-arrow.png" alt="View Arrow"></a></p>-->
+						<!--		</div>-->
+						<!--		<div class="list-item">-->
+						<!--			 <div class="imp-head">Important Messages</div>-->
+      <!--                        <p>"No need to issue cheques by investors while subscribing to IPO. Just write the bank account number and sign in the application form to authorise your bank to make payment in case of allotment. No worries for refund as the money remains in investor's account."</p>-->
+      <!--                        <p><a href="pdf/communiques_dp_DP-5547-SEBI-Notification-Ticker-on-Website-of-DPs-for-Investor-Awareness.pdf" target="_blank" class="readmore" id="tds-declaration-cta-1" style="color:#fff">View<img src="images/wht-arrow.png" alt="View Arrow"></a></p>-->
+						<!--		</div>-->
+						<!--		<div class="list-item">-->
+						<!--			 <div class="imp-head">Important Messages</div>-->
+      <!--                        <p>TDS Declaration</p>-->
+      <!--                        <p><a href="pdf/TDS-declaration-on-portal.pdf" target="_blank" class="readmore" id="tds-declaration-cta-1" style="color:#fff">View<img src="images/wht-arrow.png" alt="View Arrow"></a></p>-->
+						<!--		</div>-->
+								
+						<!--	<div class="list-item">-->
+						<!--			<div class="imp-head">Important Messages</div>-->
+      <!--                        <p>Early Redemption of Sovereign Gold Bond 2016 Tranche II (Issue date March 29, 2016)</p>-->
+      <!--                        <p><a href="pdf/2021-0026-Policy-Early-Redemption-of-Sovereign-Gold-Bond-2016-Tranche -II-March-29-2016.pdf" target="_blank" class="readmore" id="imp-message-read-more-cta-10">View Circular<img src="images/wht-arrow.png" alt="View Arrow"></a></p>-->
+						<!--		</div>-->
+						<!--		<div class="list-item">-->
+						<!--			<div class="imp-head">Important Messages</div>-->
+      <!--                        <p>Prevent Unauthorized Transactions in your demat account --&gt; Update your Mobile Number with your Depository Participants. Receive alerts on your Registered Mobile for all debit and other important transactions in your demat account directly from NSDL on the same day. Issued in the interest of Investors.</p>-->
+						<!--		</div>-->
+						<!--		<div class="list-item">-->
+						<!--			 <div class="imp-head">Important Messages</div>-->
+      <!--                        <p>KYC is one time exercise while dealing in securities markets - once KYC is done through a SEBI registered intermediary (broker, DP, Mutual Fund etc.), you need not undergo the same process again when you approach another intermediary.</p>-->
+						<!--		</div>-->
+						<!--		<div class="list-item">-->
+						<!--			<div class="imp-head">Important Messages</div>-->
+      <!--                        <p><a href="https://scores.gov.in/scores/Welcome.html" target="_blank" id="score-investor-cta"><img class="media-object img-fluid" src="images/scores-investor-complaints.jpg" alt=""></a></p>-->
+						<!--		</div>								-->
+						<!--	</div>-->
+						
+						<!--<div id="pagination-container">-->
+      <!--                      <p class="paginacaoCursor" id="beforePagination"><i class='fas fa-angle-left'></i></p>-->
+      <!--                      <p class="paginacaoCursor" id="afterPagination"><i class='fas fa-angle-right'></i></p>-->
+      <!--                  </div>	-->
+                     </div>
+                     <div class="important-message important-message-item2">
+                        <div class="feedback-wrap">
+                           <div class="feedback-txt">
+                              <h2 class="title">Your feedback<br>
+                                 helps us improve!
+                              </h2>
+                              <a href="feedback.php" class="sharenow" id="feedback-cta">Share Now <img src="images/wht-arrow.png" alt="StockHolding Share Now" style="padding-left:5px"></a> 
+                           </div>
+                        </div>
+                     </div>
+                     <div class="important-message important-message-item3">
+                        <div class="partner-wrap">
+                           <div class="partner-txt">
+                              <h2 class="title">Partner With Us</h2>
+                              <a href="partner-with-us.php" class="sharenow" id="partner-cta">Get Started <img src="images/wht-arrow.png" alt="StockHolding Partner" style="padding-left:5px"></a> 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <div class="popup-div">
+                <div class="modal fade" id="important-popup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered">
+					 <div class="modal-content">
+						<div class="modal-header d-flex align-items-center justify-content-center">
+						   <h5 class="modal-title" id="staticBackdropLabel">IMPORTANT!!</h5>
+						   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+						</div>
+						<div class="modal-body">
+						  <p>Mandatory <b>updation</b> in your Demat & Trading Account by <b>June 30<sup>th</sup>, 2023</b></p>			   
+						  <div>
+						  <ul>
+						   <li>Update <strong> Nomination</strong> details or <strong>Opt out</strong> of Nomination </li>
+							<li>Aadhaar seeding (linkage of Aadhaar with PAN) 
+							<ul class="child-ul">
+							<li>To Link Pan with Aadhar visit <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" class="txt-blue">https://www.incometax.gov.in/iec/foportal/</a> </li>
+							<li>In case the above is not already updated,  please ensure immediate updation to avoid liable “Suspension” of your Account</li>
+							</ul></li>
+					        <li style="list-style:none;">Contact  StockHolding branch or write to us <a href="mailto:customercare@stockholding.com" class="txt-blue">customercare@stockholding.com</a> for more information</li>
+							<li style="list-style:none;">Access your Account Online  through “FastFwd”  visit</strong> <a href="http://www.online.stockholding.com/secure_login/" target="_blank" class="txt-blue">www.online.stockholding.com/secure_login</a></li>
+						</ul>
+						  </div>
+						</div>
+					 </div>
+					</div>
+    			</div>
+			</div>
+            </div>
+            <!-- Inner Wrapper -->
+            <div class="popup-div">
+               <div class="modal fade" id="banner-popup" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                     <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center justify-content-center">
+                           <h5 class="modal-title" id="staticBackdropLabel">To download the market profile please provide the below details</h5>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                           <form action="dwn-mrkt-prf.php" method="post" name="form">
+                              <div class="form-group">
+                                 <input type="text" class="form-control" id="names" placeholder="Name*" name="name" onkeyup="this.value=this.value.replace(/[^a-zA-Z\s\.\',]/g,'');" required="required">
+                              </div>
+                              <div class="form-group">
+                                 <input type="text" class="form-control" id="organisation" placeholder="Organisation*" name="organisation" onkeyup="this.value=this.value.replace(/[^a-zA-Z0-9 ]/);" required="required">
+                              </div>
+                              <div class="form-group">
+                                 <input type="text" class="form-control" id="country" placeholder="Country*" name="country" required="required">
+                              </div>
+                              <div class="form-group">
+                                 <input type="text" class="form-control" id="emails" placeholder="Email Address*" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$" title="Please enter valid email address." required="required">
+                              </div>
+                              <div class="form-group">
+                                 <input type="text" class="form-control" id="mobilenos" placeholder="Mobile No." name="mobile_no" maxlength="10" pattern=".{10,10}" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');" title="Please enter 10 digit mobile number.">
+                              </div>
+                              <input type="hidden" name="token" id="token" />
+                              <input type="hidden" name="action" id="action" />
+                              <div class="otp-btn">
+                                 <div class="form-group">  
+                                    <button type="submit" class="btn btn-default otp-btn-mr" id="Submits" name="submit" value="Submit" style="font-size:15px">Submit</button>
+                                 </div>
+                              </div>
+                              <div class="fnt14 text-end">* Mandatory fields</div>
+                              <div class="clearfix"></div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>            
+
+            </div>           
+    </div>
+         <!--wrapper close -->
+      </div>
+		
+      <script src="js/footer.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+           
+      <script src="js/jquery.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/main.js"></script>	  
+	<script src="js/sticky-icon.js"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfqdPAiAAAAAMNENHAInxp-9brEIqcaepfvDCOH', {
+                action: 'submit'
+            }).then(function(token) {
+                console.log(token, "++token++")
+
+                if (typeof(Storage) !== "undefined") {
+                    localStorage.setItem("token", token);
                 }
-            }), '*');
-          });
-        });
-    }
-  </script>
-  </head>
-  <body>
-<footer>
-  <p>...</p>
-</footer>
-    <script>onload();</script>
-  </body>
+                else {
+                  localStorage.setItem("token", token);
+                }
+            });
+        })
+    </script>
+    <script type="text/javascript">
+        window.ymConfig = {
+            bot: 'x1561526327711',
+            host: 'https://app.yellow.ai',
+            payload: {
+                'token': localStorage.getItem("token")
+            }
+        };
+        (function() {
+            var w = window,
+                ic = w.YellowMessenger;
+            if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
+            else {
+                var d = document,
+                    i = function() {
+                        i.c(arguments)
+                    };
+
+                function l() {
+                    var e = d.createElement("script");
+                    e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/main.js";
+                    var t = d.getElementsByTagName("script")[0];
+                    t.parentNode.insertBefore(e, t)
+                }
+                i.q = [], i.c = function(e) {
+                    i.q.push(e)
+                }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
+            }
+        })();
+    </script>  	      
+      <script>
+         $(document).ready(function() {         
+         $("#carousel").owlCarousel({
+          autoplay: false,
+          rewind: false,
+          margin: 20,          
+          responsiveClass: true,
+          autoHeight: false,
+          autoplayTimeout: 7000,
+          smartSpeed: 800,
+          dots:false,
+          nav: true,
+          responsive: {
+         0: {
+           items: 1
+         },
+         600: {
+           items: 1
+         },
+         
+         991: {
+           items: 2
+         }
+          }
+         });
+         });
+      </script>	  
+		<script>
+		$(document).ready(function(){
+		var HZperPage = 1,//number of results per page
+		HZwrapper = 'list-wrapper',//wrapper class
+		HZlines   = 'list-item',//items class
+		HZpaginationId ='pagination-container',//id of pagination container
+		HZpaginationArrowsClass = 'paginacaoCursor',//set the class of pagination arrows
+		HZpaginationColorDefault =  '#fff',//default color for the pagination numbers
+		HZpaginationColorActive = '#65a14c', //color when page is clicked
+		HZpaginationCustomClass = 'customPagination'; //custom class for styling the pagination (css)
+
+		/*------- /*-------*/
+		function paginationShow(){if($("#"+HZpaginationId).children().length>3){var a=$(".activePagination").attr("data-valor");if(a>=4){var i=parseInt(a)-3,o=parseInt(a)+2;$(".paginacaoValor").hide(),exibir2=$(".paginacaoValor").slice(i,o).show()}else $(".paginacaoValor").hide(),exibir2=$(".paginacaoValor").slice(0,5).show()}}paginationShow(),$("#beforePagination").hide(),$("."+HZlines).hide();for(var tamanhotabela=$("."+HZwrapper).children().length,porPagina=HZperPage,paginas=Math.ceil(tamanhotabela/porPagina),i=1;i<=paginas;)$("#"+HZpaginationId).append("<p class='paginacaoValor "+HZpaginationCustomClass+"' data-valor="+i+">"+i+"</p>"),i++,$(".paginacaoValor").hide(),exibir2=$(".paginacaoValor").slice(0,5).show();$(".paginacaoValor:eq(0)").css("background",""+HZpaginationColorActive).addClass("activePagination");var exibir=$("."+HZlines).slice(0,porPagina).show();$(".paginacaoValor").on("click",function(){$(".paginacaoValor").css("background",""+HZpaginationColorDefault).removeClass("activePagination"),$(this).css("background",""+HZpaginationColorActive).addClass("activePagination");var a=$(this).attr("data-valor"),i=a*porPagina,o=i-porPagina;$("."+HZlines).hide(),exibir=$("."+HZlines).slice(o,i).show(),"1"===a?$("#beforePagination").hide():$("#beforePagination").show(),a===""+$(".paginacaoValor:last").attr("data-valor")?$("#afterPagination").hide():$("#afterPagination").show(),paginationShow()}),$(".paginacaoValor").last().after($("#afterPagination")),$("#beforePagination").on("click",function(){var a=$(".activePagination").attr("data-valor"),i=parseInt(a)-1;$("[data-valor="+i+"]").click(),paginationShow()}),$("#afterPagination").on("click",function(){var a=$(".activePagination").attr("data-valor"),i=parseInt(a)+1;$("[data-valor="+i+"]").click(),paginationShow()}),$(".paginacaoValor").css("float","left"),$("."+HZpaginationArrowsClass).css("float","left");
+		})
+
+		</script>
+		<script>
+		$(window).on('load',function(){
+        $('#important-popup').modal('show');
+		});
+		</script>
+		<script type="text/javascript">
+         $(document).ready(function(){setInterval(function(){grecaptcha.ready(function() {grecaptcha.execute('6LfqdPAiAAAAAMNENHAInxp-9brEIqcaepfvDCOH', {action: 'submit'}).then(function(token) {$('#token').val(token);$('#action').val('submit');});});}, 3000);});
+        </script>
+   </body>
 </html>
