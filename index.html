@@ -902,7 +902,7 @@ marquee {margin: 5px 0 10px 0;}
       <script src="js/owl.carousel.min.js"></script>
       <script src="js/main.js"></script>	  
 	<script src="js/sticky-icon.js"></script>
-    <script>
+    <!-- <script>
         grecaptcha.ready(function() {
             grecaptcha.execute('6LfqdPAiAAAAAMNENHAInxp-9brEIqcaepfvDCOH', {
                 action: 'submit'
@@ -918,13 +918,19 @@ marquee {margin: 5px 0 10px 0;}
                 console.log(localStorage.getItem("token"),"++helll")
             });
         })
-    </script>
+    </script> -->
     <script type="text/javascript">
+      grecaptcha.ready(function() {
+            grecaptcha.execute('6LfqdPAiAAAAAMNENHAInxp-9brEIqcaepfvDCOH', {
+                action: 'submit'
+            }).then(function(token) {
+                console.log(token, "++token++")
+
         window.ymConfig = {
             bot: 'x1561526327711',
             host: 'https://app.yellow.ai',
             payload: {
-                'token': localStorage.getItem("token")
+                'token': token
             }
         };
         (function() {
@@ -948,6 +954,8 @@ marquee {margin: 5px 0 10px 0;}
                 }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
             }
         })();
+      });
+   })
     </script>  	      
       <script>
          $(document).ready(function() {         
